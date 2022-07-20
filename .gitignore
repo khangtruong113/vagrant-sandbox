@@ -1,2 +1,7 @@
 mongodb_vagrant/.vagrant
 mysql_started/.vagrant
+hc_bionic64/.vagrant
+nifi/services/*
+nifi/data/*
+nifi/.vagrant
+.idea/
