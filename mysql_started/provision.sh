@@ -21,7 +21,7 @@ echo "Updating my.cnf..."
 sudo sed -i "s/^bind-address/#bind-address/" /etc/mysql/my.cnf
 echo "[mysqld]" | sudo tee -a /etc/mysql/my.cnf
 echo "bind-address=0.0.0.0" | sudo tee -a /etc/mysql/my.cnf
-echo "default-time-zone='+00:00'" | sudo tee -a /etc/mysql/my.cnf
+echo "default-time-zone='+07:00'" | sudo tee -a /etc/mysql/my.cnf
 
 echo "Granting root access via any IP..."
 MYSQL_PWD=root mysql -u root -e "CREATE USER 'root'@'%' IDENTIFIED BY 'root'; GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION; FLUSH PRIVILEGES; SET GLOBAL max_connect_errors=10000;"
